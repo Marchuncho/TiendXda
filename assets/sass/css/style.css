@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+ margin: 0;
+ padding: 0;
+}
+body * {
+ border: 1px solid red;
+}/* grid caso float */
+
+
+.box {
+ width: 100%;
+ max-width: 80%;
+ height: 300px;
+ margin: 0 auto;
+ background-color: blue;
+
+}
+/*-- por defecto todo div viene con la flotacion o float en none, al estar en none todo div queda uno sobre el otro*/
+
+.box__cajaUno {
+ width: 25%;
+ height: 200px;
+ background: red;
+ float: left;
+}
+.box__cajaDos {
+ width: 25%;
+ height: 200px;
+ background: orange;
+ float: left;
+
+}
+.box__cajaTres {
+ width: 25%;
+ height: 200px;
+ background: coral;
+ float: left;
+}
+.box__cajaCuatro {
+ width: 25%;
+ height: 200px;
+ background: purple;
+ float: left;
+}
+
+
+/*uso de position*
+por defecto static
+su relativo debe ser relative (siempre el relativo es el contenedor mayor:padre)
+absolute: lo aplico al hijo del contenedor
+
+cuando aplico posiciones absoluta la etiqueta html hija, sale del flujo del html, osea no responde a la propiedad float,
+
+la posicion de un hijo con propiedad absoluta, se determina por:
+top
+left
+right
+bottom
+
+fixed, no responde a ningun padre, su relativo pro defecto es la pantalla */
+
+.boxRelative{
+  width: 100%;
+  height: 300px;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #ccc;
+  position: relative;
+  /*overflow:auto; /* activa si es necesario el scroll*/
+}
+.boxAbsolute__cajauno{
+  width: 120px;
+  height: 120px;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  /*left: 0;
+  right: 0;*/
+  /*bottom: -50px;*/
+  }
+.boxAbsolute__cajados{
+  width: 120px;
+  height: 120px;
+  background-color: orange;
+  position: absolute;
+  top: 22px;
+  left:  17px;
+  z-index: 1;
+  /*right: 0;*/
+  /*bottom: 0;*/
+}
+.boxAbsolute__cajatre{
+  width: 120px;
+  height: 120px;
+  background-color: black;
+  position: absolute;
+  border-radius: 100%;
+  top: 10px;
+  left: 25px;
+z-index: 2;
+}

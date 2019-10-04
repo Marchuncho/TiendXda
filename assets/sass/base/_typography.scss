@@ -1,0 +1,32 @@
+h1{
+
+  font-weight: $bold;
+  font-size: $xxx-large;
+  font-family: $old;
+}
+p{
+
+  font-weight: $regular;
+  font-size: $medium;
+  font-family: $raleway;
+  color: $quick-silver;
+}
+h2{
+  font-family: $old;
+  font-weight: $bold;
+  font-size: $xx-large;
+  color: $white;
+  padding-left: 2rem;
+}
+h3{
+  font-family: $old;
+  font-weight: $regular;
+  font-size: $x-large;
+  color: $white;
+}
+.navigation__item a{
+  font-family: $raleway;
+  font-weight: $bold;
+  color: $smoky-black !important;
+  text-decoration: none;
+}

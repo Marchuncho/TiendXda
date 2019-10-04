@@ -1,0 +1,140 @@
+@media only screen and (min-width: 768px){
+.heightSection {
+  height: 109vh;
+}
+.sectionText{
+  padding: 2rem;
+
+&__container--title{
+text-align: center !important;
+padding-bottom: 3rem;
+}
+p{
+  text-align: left;
+  padding-right: 4rem;
+}
+}
+
+.newsletter {
+  background-color: $smoky-black;
+  width: 100%;
+  position: relative;
+  height: 13.2rem;
+
+  &__container {
+    padding-top: 1.5rem;
+    }
+    &h2{
+      padding-left: 3rem;
+      text-align: left;
+    }
+    &__container label{
+      position: absolute;
+      top: 6rem;
+      color: white;
+      }
+      &__container--boton{
+        padding-top: 2rem;
+      }
+    &__suscription{
+      position: absolute;
+      background-color:white;
+      right: -86px;
+      transform: rotate(90deg);
+      height: 1.8rem;
+      width: 45%;
+      top: 5.5rem;
+      }
+      &__suscription p{
+        padding-left:  1.5rem;
+        position: absolute;
+        top: -.7rem;
+      }
+}
+
+.header{
+  display: flex;
+  height: 109vh;
+}
+.object-fit{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+}
+
+//object-fit para dispositivo pequeños
+.header{
+  display: flex;
+
+}
+.object-fit{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+} //object-fit para dispositivo pequeños
+
+@media only screen and (min-width:992px){
+  .heightSection {
+    height: 109vh;
+  }
+  .sectionText{
+    padding: 2rem;
+
+  &__container--title{
+  text-align: center !important;
+  padding-bottom: 3rem;
+  }
+  p{
+    text-align: left;
+    padding-right: 4rem;
+  }
+  }
+
+  .newsletter {
+    background-color: $smoky-black;
+    width: 100%;
+    position: relative;
+    height: 13.2rem;
+
+    &__container {
+      padding-top: 1.5rem;
+      }
+      &h2{
+        padding-left: 3rem;
+        text-align: left;
+      }
+      &__container label{
+        position: absolute;
+        top: 6rem;
+        color: white;
+        }
+        &__container--boton{
+          padding-top: 2rem;
+        }
+      &__suscription{
+        position: absolute;
+        background-color:white;
+        right: -86px;
+        transform: rotate(90deg);
+        height: 1.8rem;
+        width: 45%;
+        top: 5.5rem;
+        }
+        &__suscription p{
+          padding-left:  1.5rem;
+          position: absolute;
+          top: -.7rem;
+        }
+  }
+
+  .header{
+    display: flex;
+    height: 109vh;
+  }
+  .object-fit{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  }

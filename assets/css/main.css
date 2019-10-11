@@ -487,6 +487,100 @@ h3 {
     grid-column: span 1;
   }
 }
+.collapsible {
+  text-align: right;
+}
+.collapsible label {
+  display: block;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+}
+.collapsible label i {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .navigation__list {
+  max-height: 100%;
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+.navigation__list {
+  padding: 0;
+  background-color: white;
+  display: none;
+}
+
+.navigation__item a {
+  display: block;
+  text-align: right;
+  padding: 0.5em;
+  font-family: "Old Standard TT", serif;
+  font-size: 1rem;
+  color: #0c0910;
+}
+.navigation__item a:hover {
+  color: #646266;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 10vw auto;
+    grid-template-rows: 10vh;
+    width: 100%;
+    position: relative;
+  }
+  .navigation img {
+    height: 18vh;
+  }
+  .navigation__list li {
+    float: right;
+    padding: 1rem;
+    display: block;
+  }
+
+  .collapsible label {
+    display: none;
+  }
+  .collapsible .navigation__item {
+    display: block;
+  }
+}
+/*@media only screen and (min-width: 992px){
+  .navigation{
+      display: grid;
+      grid-template-columns: 10vw auto;
+      grid-template-rows: 10vh;
+      width: 100%;
+      position: relative;
+
+      &__logo{
+
+     }
+      img{
+        height: 18vh;
+      }
+      &__list li{
+        float: right;
+        padding: 1rem;
+        display: block;
+      }
+    }
+
+  .collapsible {
+   label {
+    display: none;
+   }
+  }
+  }
+*/
 @media only screen and (min-width: 768px) {
   .heightSection {
     height: 109vh;
@@ -625,97 +719,6 @@ h3 {
     width: 100%;
   }
 }
-.collapsible {
-  text-align: right;
-}
-.collapsible label {
-  display: block;
-  padding-right: 1.5rem;
-  font-size: 1rem;
-}
-.collapsible label i {
-  cursor: pointer;
-  padding: 5px;
-}
-
-#menu {
-  display: none;
-}
-
-input:checked ~ .navigation__list {
-  max-height: 100%;
-  display: block;
-  height: auto;
-  overflow: hidden;
-}
-
-.navigation__list {
-  padding: 0;
-  background-color: white;
-  display: none;
-}
-
-.navigation__item a {
-  display: block;
-  text-align: right;
-  padding: 0.5em;
-  font-family: "Old Standard TT", serif;
-  font-size: 1rem;
-  color: #0c0910;
-}
-.navigation__item a:hover {
-  color: #646266;
-}
-
-@media only screen and (min-width: 768px) {
-  .navigation {
-    display: grid;
-    grid-template-columns: 10vw auto;
-    grid-template-rows: 10vh;
-    width: 100%;
-    position: relative;
-  }
-  .navigation img {
-    height: 18vh;
-  }
-  .navigation__list li {
-    float: right;
-    padding: 1rem;
-    display: block;
-  }
-
-  .collapsible label {
-    display: none;
-  }
-}
-/*@media only screen and (min-width: 992px){
-  .navigation{
-      display: grid;
-      grid-template-columns: 10vw auto;
-      grid-template-rows: 10vh;
-      width: 100%;
-      position: relative;
-
-      &__logo{
-
-     }
-      img{
-        height: 18vh;
-      }
-      &__list li{
-        float: right;
-        padding: 1rem;
-        display: block;
-      }
-    }
-
-  .collapsible {
-   label {
-    display: none;
-   }
-  }
-  }
-*/
 button {
   padding: 1rem 3rem;
   font-family: "Raleway", sans-serif;

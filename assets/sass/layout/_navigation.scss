@@ -24,7 +24,7 @@
 //max-height: 0;
 padding: 0;
 background-color: white;
-display: block;
+display: none;
 }
 .navigation__item {
 
@@ -48,10 +48,8 @@ display: block;
       grid-template-rows: 10vh;
       width: 100%;
       position: relative;
+      &__logo{ }
 
-      &__logo{
-
-     }
       img{
         height: 18vh;
       }
@@ -65,6 +63,9 @@ display: block;
   .collapsible {
    label {
     display: none;
+   }
+   .navigation__item{
+     display: block;
    }
   }
 }
